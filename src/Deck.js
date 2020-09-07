@@ -1,3 +1,5 @@
+import Card from './Card.js';
+
 class Deck {
   constructor() {
     this._cards = Card.values().map(
@@ -24,3 +26,5 @@ class Deck {
     this._cards = newCards
   }
 }
+
+export default Deck;

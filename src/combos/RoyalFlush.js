@@ -1,3 +1,5 @@
+import Combo from '../Combo.js';
+
 class RoyalFlush extends Combo {
   static isAvailable(cards) {
     let values = cards.map(card => card.value())
@@ -6,3 +8,5 @@ class RoyalFlush extends Combo {
     return (JSON.stringify(values) === JSON.stringify(["A", "K", "Q", "J", "10"])) && (types.length === 1)
   }
 }
+
+export default RoyalFlush;

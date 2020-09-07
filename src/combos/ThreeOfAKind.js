@@ -1,3 +1,5 @@
+import Combo from '../Combo.js';
+
 class ThreeOfAKind extends Combo {
   static isAvailable(cards) {
     let occureds = Combo.occureds(cards)
@@ -6,3 +8,5 @@ class ThreeOfAKind extends Combo {
     return nbVals.includes(3)
   }
 }
+
+export default ThreeOfAKind;

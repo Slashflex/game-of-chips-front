@@ -1,3 +1,5 @@
+import Combo from '../Combo.js';
+
 class Pair extends Combo {
   static isAvailable(cards) {
     let occureds = Combo.occureds(cards)
@@ -6,3 +8,5 @@ class Pair extends Combo {
     return nbVals.includes(2)
   }
 }
+
+export default Pair;

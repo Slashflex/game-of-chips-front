@@ -1,5 +1,21 @@
+var Array = require('../lib/gem/src/gemArray.js');
+var Number = require('../lib/gem/src/gemNumber.js');
+
+import Combo from './Combo.js';
+import Deck from './Deck.js';
+import RoyalFlush from './combos/RoyalFlush.js';
+import StraightFlush from './combos/StraightFlush.js';
+import FourOfAKind from './combos/FourOfAKind.js';
+import FullHouse from './combos/FullHouse.js';
+import Flush from './combos/Flush.js';
+import Straight from './combos/Straight.js';
+import ThreeOfAKind from './combos/ThreeOfAKind.js';
+import TwoPairs from './combos/TwoPairs.js';
+import Pair from './combos/Pair.js';
+import HighCard from './combos/HighCard.js';
+
 const COMBOS = [
-  {name: "RoyalFlush", class:RoyalFlush },
+  {name: "RoyalFlush", class: RoyalFlush },
   {name: "StraightFlush", class: StraightFlush},
   {name: "FourOfAKind", class: FourOfAKind},
   {name: "FullHouse", class: FullHouse},
@@ -67,7 +83,7 @@ document.getElementById("deal").addEventListener('click', () => {
 
   heroMessage.innerText = playerOneCombo.name();
   villainMessage.innerText = playerTwoCombo.name();
-  
+
   let victory = Combo.compareScore(playerOneCombo.score(), playerTwoCombo.score())
   let highlightCards 
 

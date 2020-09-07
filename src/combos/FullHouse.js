@@ -1,3 +1,5 @@
+import Combo from '../Combo.js';
+
 class FullHouse extends Combo {
   static isAvailable(cards) {
     let occureds = Combo.occureds(cards)
@@ -6,3 +8,5 @@ class FullHouse extends Combo {
     return nbVals.includes(3) && nbVals.includes(2)
   }
 }
+
+export default FullHouse;

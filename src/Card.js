@@ -1,3 +1,5 @@
+import '../lib/gem/src/gemNumber.js';
+
 const VALUES = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
 const VALUE_LABELS = 
   ["two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king", "ace"]
@@ -72,3 +74,4 @@ class Card {
   }
 }
 
+export default Card;
