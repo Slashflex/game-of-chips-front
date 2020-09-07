@@ -19,14 +19,7 @@ module.exports = {
                 terserOptions: {
                     compress: false,
                     keep_fnames: true,
-                    keep_classnames: true,
-                    // mangle: {
-                    //     keep_fnames: true,
-                    //     keep_classnames: true,
-                    //     // properties: {
-                    //     //     reserved: ['Foo', 'BaseModel']
-                    //     // }
-                    // }
+                    keep_classnames: true
                 }
             })
         ]
