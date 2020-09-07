@@ -5,10 +5,9 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
 
 module.exports = {
-    
     entry: resolve('./src/GameOfChips.js'),
     mode: process.env.NODE_ENV,
-    watch: true,
+    // watch: true,
     output: {
         path: resolve('./'),
         filename: './dist/bundle.min.js'

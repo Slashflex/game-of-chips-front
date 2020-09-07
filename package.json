@@ -4,6 +4,7 @@
   "description": "Ceci n'est pas du poker",
   "main": "src/index.js",
   "scripts": {
+    "prod": "npx webpack",
     "build": "webpack --mode=production",
     "watch": "webpack --watch --mode=development"
   },
