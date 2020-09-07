@@ -1,11 +1,13 @@
 const { resolve } = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
+const dotenv = require('dotenv');
+
+dotenv.config({ path: './config.env' });
 
 module.exports = {
     
     entry: resolve('./src/GameOfChips.js'),
-    // mode: 'development',
-    mode: 'production',
+    mode: process.env.NODE_ENV,
     watch: true,
     output: {
         path: resolve('./'),
@@ -29,5 +31,8 @@ module.exports = {
                 }
             })
         ]
+    },
+    node: {
+        fs: 'empty'
     }
 }

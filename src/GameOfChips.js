@@ -1,5 +1,6 @@
 var Array = require('../lib/gem/src/gemArray.js');
 var Number = require('../lib/gem/src/gemNumber.js');
+console.log(process.env.NODE_ENV)
 
 import Combo from './Combo.js';
 import Deck from './Deck.js';
