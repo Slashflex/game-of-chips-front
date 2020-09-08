@@ -14,6 +14,11 @@ import TwoPairs from './combos/TwoPairs.js';
 import Pair from './combos/Pair.js';
 import HighCard from './combos/HighCard.js';
 
+if ("serviceWorker" in navigator) {
+  // register service worker
+  navigator.serviceWorker.register("service-worker.js");
+}
+
 const COMBOS = [
   {name: "RoyalFlush", class: RoyalFlush },
   {name: "StraightFlush", class: StraightFlush},
