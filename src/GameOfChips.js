@@ -1,12 +1,5 @@
-var Array = require('../lib/gem/src/gemArray.js');
-var Number = require('../lib/gem/src/gemNumber.js');
-
-const dotenv = require('dotenv');
-
-dotenv.config({ path: './config.env' });
-
-console.log(process.env.NODE_ENV)
-
+// var Array = require('../lib/gem/src/gemArray.js');
+// var Number = require('../lib/gem/src/gemNumber.js');
 
 import Combo from './Combo.js';
 import Deck from './Deck.js';
